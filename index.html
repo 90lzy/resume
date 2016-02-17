@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>黑白底板</title>
+    <link rel="stylesheet" href="css/raw-draft.css" type="text/css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/w3.css" type="text/css">
+</head>
+<body>
+
+<header>
+    <nav class="shadow">
+        <div id="left-ul">
+        <ul class="li-float-left">
+            <li class="li-float-left"><a onclick="sidnavChange()" href="#null" ><i class="fa fa-bars"></i></a></li>
+            <li > <div>刘志远</div></li>
+        </ul>
+        </div>
+
+        <div id="right-ul">
+        <ul class="li-float-right">
+            <li><a href="https://github.com/90lzy" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/helihebian" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/cross_over_sky" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/102426333298062070305" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="http://weibo.com/2342345871/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank"><i class="fa fa-weibo"></i></a></li>
+
+        </ul>
+        </div>
+    </nav>
+</header>
+
+
+<section>
+    <nav id="nav-profile">
+        <ul>
+            <li><a  href="#person-info"><img src="pictures/person_info.ico"><span>个人信息</span></a></li>
+            <li><a onclick="changeAll()" href="#work-exp"><img src="pictures/work_exp.ico"><span>工作足迹</span></a></li>
+            <li><a onclick="changeAll()" href="#it-skill"><img src="pictures/it_skill.ico"><span>编程技能</span></a></li>
+            <li><a onclick="changeAll()" href="#education"><img src="pictures/edu.ico"><span>教育背景</span></a></li>
+            <li class="another-category"><a onclick="document.getElementById('modal-setting').style.display = 'block'" href="#null"><img src="pictures/setting.ico"><span>设置</span></a></li>
+            <li><a onclick="document.getElementById('modal-help').style.display = 'block'" href="#null"><img src="pictures/help.ico"><span>帮助</span></a></li>
+
+        </ul>
+    </nav>
+
+    <section id="content-container">
+        <section id="content">
+            <section id="top-content" class="shadow">
+                <section class="pic-wall">
+                </section>
+
+                <section id="my-photo-container">
+                    <section id="my-photo"><img src="pictures/myPhoto.jpg"></section>
+                    <section id="my-tag">
+                        <div><span>刘志远</span><i class="fa fa-mars"></i></div>
+                        <div id="my-hobby"><span>篮球</span><span>电影</span><span>历史</span><span>计算机</span></div></section>
+                </section>
+            </section>
+
+            <section id="card-person-info" class="content-card-a ">
+                <div id="person-info" class="content-card-inner shadow">
+                    <header onclick="changeAll()"><span>个人信息</span><span id="card-person-info-more">...</span></header>
+                    <ul>
+                        <li>学历<p><span class="w3-text-dark">本科</span></p></li>
+                        <li>毕业时间<p>2014年7月于<span>西北工业大学</span></p></li>
+                        <li>本科专业<br><p class="tooltip">信息安全(...)<span class="tooltip-text">主修：计算机网络、操作系统、数据结构、C语言编程</span></p>
+                            </li>
+                        <li>籍贯<p>江西省赣州市</p></li>
+                    </ul>
+                    <br>
+                </div>
+
+
+
+            </section>
+
+            <section id="card-work-exp" class="content-card-b ">
+                <div id="work-exp" class="content-card-inner shadow">
+                    <header onclick="changeAll()" href="#null"><span>工作足迹</span><span id="card-work-exp-more">...</span></header>
+                    <ul>
+                        <li onclick="changeDetail('work-exp-1')" class="work-exp-menu"><a  href="#null"><span id="work-exp-1-flag">+</span><span>最近一年</span></a></li>
+                        <li  id="work-exp-1" class="work-exp-detail"><div >
+                            <p>2015.3~2015.11，深圳市轩城文化科技有限公司，任<span>App测试</span>兼<span>微信公众号运营</span>；掌握了安卓App测试用例编写与执行、微信公众号页面的排版设计</p></div></li>
+
+                        <li onclick="changeDetail('work-exp-2')" class="work-exp-menu"><a href="#null"><span id="work-exp-2-flag">+</span><span>小插曲</span></a></li>
+                        <li  id="work-exp-2" class="work-exp-detail"><div><p>2014.12.26，参加<span>研究生考试</span>，结果堪忧</p></div></li>
+
+                        <li onclick="changeDetail('work-exp-3')" class="work-exp-menu"><a href="#null"><span id="work-exp-3-flag">+</span><span>毕业之初</span></a></li>
+                        <li  id="work-exp-3" class="work-exp-detail"><div>
+                            <p>2014.7~2014.10，​深圳市<span>迅雷</span>网络技术股份有限公司，任云加速技术部测试工程师；学习了软件测试知识，如黑白盒测试、测试工具使用、测试脚本编写等</p></div></li>
+
+                        <li onclick="changeDetail('work-exp-4')" class="work-exp-menu"><a href="#null"><span id="work-exp-4-flag">+</span><span>在校实习</span></a></li>
+                        <li id="work-exp-4" class="work-exp-detail"><div>
+                            <p>2013.9.1~2013.9.15，西安未来国际股份有限公司，任实习生；独立搭建<span>Linux</span>系统下的的openVPN服务器。学会源码编译，网络日志分析与查错，入侵渗透原理</p></div></li>
+
+                    </ul>
+                </div>
+
+
+            </section>
+
+
+
+            <section id="card-it-skill" class="content-card-b ">
+                <div id="it-skill" class="content-card-inner shadow">
+                    <header onclick="changeAll()"><span>编程技能</span><span id="card-it-skill-more">...</span></header>
+                    <table id="table-it-skill">
+                        <tr>
+                            <td>C</td>
+                            <td><div class="counter-bar length-70">掌握</div></td>
+                        </tr>
+                        <tr>
+                            <td><span>HTML</span></td>
+                            <td><div class="counter-bar length-70"></div></td>
+                        </tr>
+                        <tr>
+                            <td><span>CSS</span></td>
+                            <td><div class="counter-bar length-70"></div></td>
+                        </tr>
+                        <tr>
+                            <td><span>JavaScript</span></td>
+                            <td><div class="counter-bar length-70"></div></td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td><div class="counter-bar length-50">熟悉</div></td>
+                        </tr>
+
+                        <tr>
+                            <td>Linux</td>
+                            <td><div class="counter-bar length-50"></div></td>
+                        </tr>
+                        <tr>
+                            <td><span>Android</span></td>
+                            <td><div class="counter-bar length-30">了解</div></td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td><div class="counter-bar length-30"></div></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+
+            <section id="card-education" class="content-card-a ">
+                <div id="education" class="content-card-inner shadow">
+                    <header onclick="changeAll()"><span>在校表现</span><span id="card-education-more">...</span></header>
+                    <form>
+                        <input type="checkbox" name="vehicle1" value="car1" checked>成绩良好：平均学分积<span>80.32</span>，专业​前<span>30%</span>
+                        <br>
+                        <input type="checkbox" name="vehicle2" value="Car2" checked>奖学金：<span>3</span>次院级奖学金
+                        <br>
+                        <input type="checkbox" name="vehicle3" value="Car3" checked>竞赛得奖：校园程序设计<span>二</span>等奖、物理实验<span>二</span>等奖
+                        <br>
+                        <input type="checkbox" name="vehicle4" value="Car4" checked>英语良好：通过英语<span>六</span>级
+                        <br>
+                        <input type="checkbox" name="vehicle5" value="Car5" checked>作风端正：无吃喝嫖赌下<span>九</span>流记录
+                        <br>
+                    </form>
+                    <br>
+                    <!--
+                    <p>大学四年平均学分积80.32，位于专业​前30%</p>
+                    <p>良好的英语能力：国家六级496，考研英语76</p>
+                    <p>较强的学习能力和学习欲望：获得多次院级奖学金, </p>
+                    <p>不错的动手实验能力：多次参加学校实验比赛并获得名次</p>
+                    -->
+                </div>
+            </section>
+
+        </section>
+    </section>
+
+
+
+</section>
+<!--
+<div id="float-button">
+    <a onclick="document.getElementById('modal-phone').style.display = 'block'" href="#null"><i class="fa fa-envelope"></i></a>
+</div>
+-->
+<a onclick="document.getElementById('modal-phone').style.display='block'" class="w3-btn-floating-large w3-red" style="position:fixed;bottom:100px;right:24px;z-index:1;">
+    <i class="fa fa-envelope"></i></a>
+
+<div id="modal-phone" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-top">
+        <header class="w3-container w3-lime">
+            <span onclick="document.getElementById('modal-phone').style.display='none'" class="w3-closebtn">&times;</span>
+            <h4>联系我，随时随地</h4>
+        </header>
+        <div class="w3-container">
+            <br>
+            <p>电话：15770783601</p>
+            <p>邮箱：liuzhiyuan2011@sina.com</p>
+            <p>QQ： 1178506115</p>
+            <br>
+        </div>
+        <footer class="w3-container w3-lime">
+            <p class="w3-right-align" >2016年2月3日 刘志远</p>
+        </footer>
+    </div>
+</div>
+
+<div id="modal-help" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-top">
+        <header class="w3-container w3-lime">
+            <span onclick="document.getElementById('modal-help').style.display='none'" class="w3-closebtn">&times;</span>
+            <h4>帮助</h4>
+        </header>
+        <div class="w3-container">
+            <br>
+            <p>如果您的电脑未连接网络</p>
+            <p>则顶栏及它处的一些网络图标会无法显示</p>
+            <br>
+        </div>
+        <footer class="w3-container w3-lime">
+            <p class="w3-right-align" >2016年2月3日 刘志远</p>
+        </footer>
+    </div>
+</div>
+
+<div id="modal-setting" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-top">
+        <header class="w3-container w3-lime">
+            <span onclick="document.getElementById('modal-setting').style.display='none'" class="w3-closebtn">&times;</span>
+            <h4>设置</h4>
+        </header>
+        <div class="w3-container">
+            <br>
+            <p>将来的所有设置选项</p>
+            <p>都会出现在这里</p>
+            <br>
+        </div>
+        <footer class="w3-container w3-lime">
+            <p class="w3-right-align" >2016年2月3日 刘志远</p>
+        </footer>
+    </div>
+</div>
+
+<script>
+    var sidnavTurnOnFlag = true;
+    var cardAmplied = "false";
+    var cardAmpliedId;
+    var detailShown = false;
+    var detailShownId;
+
+    function sidnavChange() {
+        if(sidnavTurnOnFlag == true) {
+            document.getElementById("nav-profile").style.display = "none";
+            sidnavTurnOnFlag = false;
+            document.getElementById("content-container").style.width = "100%";
+            document.getElementById("content").style.width = "68%";
+        } else {
+            document.getElementById("nav-profile").style.display = "block";
+            sidnavTurnOnFlag = true;
+            document.getElementById("content-container").style.width = "85%";
+            document.getElementById("content").style.width = "80%";
+
+        }
+    }
+
+    function changeAll(){
+        var flageInner = document.getElementById('card-person-info-more').innerHTML;
+
+        if (flageInner == "...") {
+            amplyAll();
+        } else {
+            shankAll();
+        }
+    }
+
+    function amplyAll() {
+        amply("card-person-info");
+        amply("card-work-exp");
+        amply("card-it-skill");
+        amply("card-education");
+        document.getElementsByClassName("work-exp-detail").style.display = "block";
+
+    }
+
+    function shankAll(){
+        shank("card-person-info");
+        shank("card-work-exp");
+        shank("card-it-skill");
+        shank("card-education");
+        document.getElementsByClassName("work-exp-detail").style.display = "none";
+    }
+
+    function change(cardId) {
+        var spanMoreId = cardId + "-more";
+        var cardMore = document.getElementById(spanMoreId);
+
+        if (cardMore.innerHTML == "-") {
+            shank(cardId);
+            cardMore.innerHTML = "...";
+            cardAmplied = "false";
+        } else {//cardMore.innerHTML == "..."
+            if (cardAmplied == true) {
+                shank(cardAmpliedId);
+                cardAmplied = false;
+            }
+            amply(cardId);
+        }
+    }
+
+    function amply(cardId) {
+    /*    if(cardAmplied == true) {
+            shank(cardAmpliedId);
+
+        }*/
+        var card = document.getElementById(cardId);
+        var spanMoreId = cardId + "-more";
+
+        card.style.float = "none";
+        card.style.clear = "both";
+        card.style.width = "70%";
+        card.style.margin = "auto";
+
+
+        document.getElementById(spanMoreId).innerHTML = "-";
+
+        cardAmplied = true;
+        cardAmpliedId = cardId;
+
+
+    }
+
+    function shank(cardId) {
+        var card = document.getElementById(cardId);
+        var spanMoreId = cardId + "-more";
+        card.style.clear = "none";
+        card.style.width = "50%";
+        card.style.margin = "0px";
+
+        document.getElementById(spanMoreId).innerHTML = "...";
+
+        if (cardId == "card-person-info" | cardId == "card-education") {
+            card.style.float = "left";
+        } else {
+            card.style.float = "right";
+        }
+
+    }
+
+    function changeDetail(detailId) {
+        var flagId = detailId + "-flag";
+        var flagInner = document.getElementById(flagId).innerHTML;
+
+        if (flagInner == "+") {
+            showDetail(detailId);
+           // document.getElementById(flagId).innerHTML = "-";
+        } else {
+            hideDetail(detailId);
+            //document.getElementById(flagId).innerHTML = "+";
+        }
+    }
+
+    function showDetail(detailId){
+        if (detailShown == true) {
+            hideDetail(detailShownId);
+        }
+        document.getElementById(detailId).style.display = "block";
+        document.getElementById(detailId + "-flag").innerHTML = "-";
+        detailShown = true;
+        detailShownId = detailId;
+    }
+
+    function  hideDetail(detailId){
+        document.getElementById(detailId).style.display = "none";
+        document.getElementById(detailId + "-flag").innerHTML = "+";
+        detailShown = false;
+    }
+
+</script>
+
+</body>
+</html>

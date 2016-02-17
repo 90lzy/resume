@@ -1,0 +1,367 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #EDE7F6;
+}
+a {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+li {
+    padding: 10px 16px;
+}
+
+#work-exp li {
+    padding: 0px 0px 4px 16px;
+}
+
+#work-exp li.work-exp-menu {
+    border-bottom: 1px solid lightgrey;
+}
+#work-exp li.work-exp-detail {
+
+    color: white;
+    background-color: #757575;
+}
+#work-exp li.work-exp-menu:hover {
+    background-color: white;
+}
+#work-exp span:last-child{
+    margin-left: 8px;
+}
+#work-exp p {
+    font-size: 90%;
+}
+#work-exp a {
+    color: black;
+}
+#work-exp ul li.work-exp-menu span:first-child {
+    color: darkblue;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    height: auto;
+}
+
+
+header nav{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: #673AB7;
+    color: white;
+    z-index: 1;
+}
+
+header nav #left-ul,
+header nav #right-ul {
+    width: auto;
+    height: auto;
+
+}
+
+header nav #right-ul {
+    float: right;
+}
+header nav #left-ul {
+    float: left;
+}
+
+
+ul.li-float-left li {
+    float: left;
+}
+ul.li-float-right li {
+    float: right;
+}
+
+header nav a {
+    color: white;
+}
+
+header nav li a:hover {
+    /*background-color: #111;*/
+    color: red;
+}
+
+
+section #nav-profile {
+    width: 15%;
+    height: auto;
+    margin-top: 70px;/*恰好是顶栏的height + 8px*/
+
+    position: fixed;/*设为fixed后，不占用页面空间*/
+    font-size: 90%;
+
+}
+#nav-profile li {
+    height: auto;
+
+}
+#nav-profile img {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+#nav-profile li a {
+    color: black;
+}
+
+#nav-profile a:hover {
+    /*background-color: #111;*/
+    color: #673AB7;
+}
+
+section nav ul li.another-category {
+    margin-top: 16px;
+    border-top: 1px solid lightgrey;
+}
+section #content-container {
+    width: 85%;/*整个页面的80%*/
+    height: auto;
+    margin-top: 58px;
+    padding: 0px;
+    float: right;
+}
+
+#content {
+    width: 80%;/*80%*85%*/
+    height: auto;
+    margin: 16px auto;
+}
+
+#top-content {
+    width: 100%;
+    height: auto;
+}
+
+.pic-wall {
+    width: auto;
+    height: 150px;
+    background-color: #4CAF50;
+}
+
+#my-photo-container {
+    height: 150px;
+    width: auto;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+    top: -75px;
+    left: 50px;
+
+}
+
+#my-photo-container span {
+    margin: 0px 10px;
+    border-radius: 15%;
+}
+#my-photo {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#my-tag {
+    display: inline-block;
+    height: 75px;
+    width: auto;
+    position: absolute;
+    top: 75px;
+    left: 150px;
+}
+
+#my-tag div:first-child {
+    padding: 8px;
+    font-size: 110%;
+}
+
+#my-hobby span {
+    font-size: 90%;
+    border: 1px solid black;
+}
+
+.content-card-a, .content-card-b {
+    width: 50%;
+    height: auto;
+
+
+}
+
+.content-card-a {
+    float: left;
+    padding-right: 4px;
+}
+.content-card-b {
+    float: right;
+    padding-left: 4px;
+}
+
+.content-card-inner {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+}
+
+/*#float-button {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 72px;
+    right: 32px;
+    text-align: center;
+
+}
+*/
+#float-button {
+    display: inline-block;
+    width:56px;
+    height:56px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 8px 8px;
+    cursor: pointer;
+    position: fixed;
+
+    z-index: 1;
+    bottom: 72px;
+    right: 32px;
+
+    background-color: #F50057;
+}
+
+#float-button a {
+    color: white;
+}
+#table-it-skill tr td:last-child  {
+    text-align: right;
+}
+#table-it-skill tr td:first-child {
+    width: 20%;
+    text-align: right;
+    font-size: 90%;
+}
+#table-it-skill .counter-bar {
+    font-size: 90%;
+    height: 20px;
+    background-color: #7E57C2;
+}
+.length-70 {
+    width: 70%;
+}
+
+.length-50 {
+    width: 50%;
+}
+
+.length-30 {
+    width: 30%;
+}
+/****************************/
+.work-exp-detail {
+    display: none;
+}
+
+#person-info li {
+    padding: 0px 0px 8px 16px;
+}
+#person-info p {
+    margin-left: 16px;
+    font-size: 80%;
+}
+
+.shadow {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important
+}
+
+#content header {
+    font-size: 110%;
+    background-color: #4CAF50;
+    padding: 16px;
+    height: auto;
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+
+}
+.tooltip .tooltip-text {
+
+    display: none;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -100%;
+    left: 105%;
+
+
+}
+.tooltip:hover .tooltip-text {
+    display: block;
+}
+
+#content header span:last-child {
+    float: right;
+    padding: 0px 16px;
+}
+
+form {
+    margin: 14px 16px;
+    font-size: 90%;
+}
+.work-exp-detail span {
+    color: black;
+    background-color: #FFD54F;
+    border-radius: 15%;
+    margin: 3px;
+}
+#person-info ul span, form span, #table-it-skill span {
+    background-color: #FFD54F;
+    border-radius: 15%;
+    margin: 3px;
+}
+#person-info span.tooltip-text {
+    background-color: black;
+}
+
+.w3-modal{z-index:1;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.w3-modal:target{display:block}
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}.w3-closebtn{text-decoration:none;float:right;font-size:24px;font-weight:bold;color:inherit}
+.w3-closebtn:hover,.w3-closebtn:focus{color:#000;text-decoration:none;cursor:pointer}
+.w3-animate-top{
+    position:relative;-webkit-animation-name:animatetop;-webkit-animation-duration:0.4s;animation-name:animatetop;animation-duration:0.4s}
